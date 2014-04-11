@@ -1,0 +1,42 @@
+{
+    "name":                                 "shrikeh=net/frontend",
+    "description":                          "The frontend",
+    "minimum-stability":                    "dev",
+    "license":                              "MIT",
+    "homepage":                             "https://github.com/shrikeh-net/frontend",
+    "type":                                 "library",
+    "authors": [
+        {
+            "name":                         "Barney Hanlon",
+            "email":                        "barney@shrikeh.net"
+        }
+    ],
+    "require": {
+        "php":                              ">=5.4",
+        "symfony/symfony":                  "2.5.*@dev",
+        "twig/extensions":                  "*",
+        "symfony/assetic-bundle":           "*",
+        "symfony/swiftmailer-bundle":       "*",
+        "symfony/monolog-bundle":           "*",
+        "sensio/distribution-bundle":       "*",
+        "sensio/framework-extra-bundle":    "*",
+        "sensio/generator-bundle":          "*",
+        "jms/security-extra-bundle":        "*",
+        "jms/di-extra-bundle":              "*",
+        "kriswallsmith/assetic":            "*"
+    },
+    "require-dev": {
+        "behat/behat":                      "3.0.*@dev",
+        "phpspec/phpspec":                  "2.0.*@dev",
+        "phploc/phploc":                    ">=1.7.4",
+        "pdepend/pdepend":                  "1.1.3",
+        "sebastian/phpcpd":                 "2.0.*@dev",
+        "mayflower/php-codebrowser":        "~1.1",
+        "phpmd/phpmd" :                     ">=1.4.0",
+        "squizlabs/php_codesniffer":        "1.*"
+    },
+    "config": {
+        "bin-dir":                          "bin"
+    },
+    "autoload": {"psr-0": {"": "src"}}
+}
